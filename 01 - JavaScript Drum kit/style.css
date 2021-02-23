@@ -1,3 +1,6 @@
+* {
+  touch-action: manipulation;
+}
 html {
   font-size: 10px;
   background: url("./background-image.jpg") bottom center;
