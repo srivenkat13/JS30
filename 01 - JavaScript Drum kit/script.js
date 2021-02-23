@@ -2,13 +2,13 @@ function playSound(e) {
     //returns the audio element
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     // returns the div element which matches to keydown
-    const KEY = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
      //this rewinds the tone each time
     audio.currentTime = 0;
     audio.play();
     // when a non-existent key is hit, it will return 
     if (!audio) return;
-    KEY.classList.add('playing')
+    key.classList.add('playing')
 }
 function removeTransition(e) {
     //skip it if its not a transform property
