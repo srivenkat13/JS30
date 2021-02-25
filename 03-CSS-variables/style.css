@@ -1,8 +1,8 @@
 /* declaring CSS variables */
 :root{
-  --base-color: #ff7f50;
-  --spacing : 30px;
-  --blur: 2px;
+  --base-color: #BADA55;
+  --spacing : 0px;
+  --blur: 0px;
 }
 /*  applying the variables to img */
 img {
