@@ -1,3 +1,19 @@
+/* declaring CSS variables */
+:root{
+  --base-color: #ff7f50;
+  --spacing : 30px;
+  --blur: 2px;
+}
+/*  appling the variables to img */
+img {
+  padding: var(--spacing);
+  background: var(--base-color);
+  filter: blur(var(--blur));
+}
+
+.hl{
+  color: var(--base-color);
+}
 /*
       misc styles, nothing to do with CSS variables
     */
