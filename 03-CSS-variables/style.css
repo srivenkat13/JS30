@@ -4,7 +4,7 @@
   --spacing : 30px;
   --blur: 2px;
 }
-/*  appling the variables to img */
+/*  applying the variables to img */
 img {
   padding: var(--spacing);
   background: var(--base-color);
