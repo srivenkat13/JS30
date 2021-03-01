@@ -72,7 +72,13 @@ body {
   align-items: center;
 }
 
+.panel > *:first-child{
+  transform: translateY(-100%);
+}
 
+.panel > *:last-child{
+  transform: translateY(100%);
+}
 
 .panel p {
   text-transform: uppercase;
