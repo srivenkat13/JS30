@@ -1,7 +1,7 @@
 /* declaring CSS variables */
-:root{
-  --base-color: #BADA55;
-  --spacing : 0px;
+:root {
+  --base-color: #bada55;
+  --spacing: 0px;
   --blur: 0px;
 }
 /*  applying the variables to img */
@@ -11,7 +11,7 @@ img {
   filter: blur(var(--blur));
 }
 
-.hl{
+.hl {
   color: var(--base-color);
 }
 /*
@@ -22,13 +22,11 @@ body {
   text-align: center;
   background: #4291c9;
   color: white;
-  font-family: "helvetica neue", sans-serif;
-  font-weight: 80;
-  font-size: 30px;
+  font: 80 30px helvetica ;
 }
 
 .controls {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 input {
@@ -36,4 +34,5 @@ input {
 }
 img {
   border-radius: 2%;
+  height:60vh;
 }
