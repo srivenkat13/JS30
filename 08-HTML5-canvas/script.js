@@ -1,6 +1,7 @@
 const canvas = document.querySelector("#plane");
 const context = canvas.getContext("2d");
 
+const resetBtn = document.getElementById("reset")
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
@@ -43,7 +44,9 @@ function draw(e) {
       context.lineWidth--
   }
 }
-
+function clearCanvas() {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+}
 canvas.addEventListener("mousedown", (e) => {
   isDrawing = true;
   [lastX, lastY] = [e.offsetX, e.offsetY];
@@ -51,3 +54,5 @@ canvas.addEventListener("mousedown", (e) => {
 canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mouseup", () => (isDrawing = false));
 canvas.addEventListener("mouseout", () => (isDrawing = false));
+
+resetBtn.addEventListener("click", clearCanvas)
