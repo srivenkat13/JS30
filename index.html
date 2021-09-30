@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript30</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body></body>
-   
-<header>Below is the list of projects</header>
-        
-    <a href="01 - JavaScript Drum kit/">Drum kit</a>
-    <br>
-    <a href="02-Digital-Analog-clock/">Digital- Analog Clock</a>
-    <br>
-    <a href="03-CSS-variables/"> Updating CSS variables with JS </a>
-    <br>
-    <a href="04-Array-1/">Array Cardio 1 </a>
-    <br>
-    <a href="05-flex-panel/">Flex Panels</a>
-    <br>
-    <a href="06-Type-Ahead/">Type Ahead</a>
-    <br>
-    <a href="07-Array-2/">Array Cardio 2</a>
-    <br>
-    <a href="08-HTML5-canvas/">HTML5 Canvas </a>
-    <br>
-    <a href="09-Dev-tools/">Dev Tools </a>
-    <br>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <h1>30 JavaScript <span onmouseleave="addMini()">projects</span></h1>
+    </div>
+    <div class="links">
+      <p><a href="01 - JavaScript Drum kit/">Drum kit</a></p>
 
-    <footer>It will be styled and updated soon</footer>
-</body>
+      <p><a href="02-Digital-Analog-clock/">Digital-Analog Clock</a></p>
+
+      <p><a href="03-CSS-variables/"> Updating CSS variables with JS </a></p>
+
+      <p><a href="04-Array-1/">Array Cardio 1 </a></p>
+
+      <p><a href="05-flex-panel/">Flex Panels</a></p>
+
+      <p><a href="06-Type-Ahead/">Type Ahead</a></p>
+
+      <p><a href="07-Array-2/">Array Cardio 2</a></p>
+
+      <p><a href="08-HTML5-canvas/">HTML5 Canvas </a></p>
+
+      <p><a href="09-Dev-tools/">Dev Tools </a></p>
+    </div>
+
+    <!-- <footer>It will be styled and updated soon</footer> -->
+    <script>
+      function addMini() {
+        const addingWord = document.querySelector("span");
+        addingWord.innerHTML = ` mini-projects`;
+      }
+    </script>
+  </body>
 </html>
